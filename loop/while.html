@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        /*
+            Đối vs while sẽ thực hiện kiểm tra điều kiện trước
+            -Nếu điều kiện đúng thì chạy toàn thân
+            -Nếu điều kiện sai thì dừng trương trình
+            Q/A : while và for khác nhau chỗ nào ?
+            -while khi không biết trước số lần lặp
+            -for biết trc số lần lặp
+            -viết chương trình ép người nhập nhập Q, không thì nhập lại
+        */
+       let i = 0
+        while(i<5){
+            console.log(i)
+            i++
+        }
+
+        let kytu = prompt("mời nhập kí tự")
+        while(kytu != "q"){
+            kytu = prompt("mời nhập kí tự")
+        }
+    </script>
+</body>
+</html>

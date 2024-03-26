@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        B10: Viết chương trình viết vào 1 câu bất kì in ra câu ngược lại của nó.
+          Vd : "hello world" => "dlrow olleh"
+        B11 : Viết chương trình nhập vào 5 số nguyên, in ra số nguyên lớn nhất và sắp xếp giảm dần
+        B14 : Viết chương trình nhập vào 1 số nguyên dương n<100 .Hãy in ra bằng số có n dòng, mỗi
+        dòng in n số nguyên liên tiếp, dòng thứ 1 bắt dầu bằng số 1
+        */
+        let a = prompt("Nhập 1 chuỗi bất kì")
+        let b = a.length
+        let result = []
+        for(let i = 0;i<b;i++){
+            let c = b -1 - i
+            result.push(a[c])
+        }
+        
+        console.log(result.join(""))
+
+
+        // let str = "Hello world"
+        // let temp = ''
+        // for(let i = str.length-1; i>=0;i--){
+        //     temp += str[i]
+        // }
+        // console.log(temp)
+    </script>
+</body>
+</html>

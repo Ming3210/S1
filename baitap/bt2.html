@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = +prompt("Nhập số thứ nhất")
+        let b = +prompt("Nhập số thứ 2")
+        let c = +prompt("Nhập số thứ 3")
+        let d = +prompt("Nhập số thứ 4")
+        let e = +prompt("Nhập số thứ 5")
+        let max = Math.max(a,b,c,d,e)
+        let array = [a,b,c,d,e]
+        console.log("Max", max)
+        // let arr = array.sort()
+        // for(let i = 0;i<arr.length/2;i++){
+        //     let temp = arr[i]
+        //     arr[i] = arr[arr.length-1-i]
+        //     arr[arr.length-1-i] = temp
+        // }
+
+        for(let i=0;i<array.length;i++){
+            for(let j = i+1;j<array.length;j++){
+                if(array[i]<array[j]){
+                    let temp = array[i]
+                    array[i] = array[j]
+                    array[j] = temp
+                }
+            }
+        }
+        
+
+        console.log("sắp xếp lớn đến bé",array)
+    </script>
+</body>
+</html>
